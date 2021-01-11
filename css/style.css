@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 27pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Utilities */
+
+:root {
+    --primary-light: #f7be00;
+    --primary-dark: #002a3a;
+}
+
+.container {
+    max-width: 1920px;
+    margin:auto;
+    padding: 0 6em;
+}
+
+/* Home Page Header */
+
+#header-home {
+    background: var(--primary-light);
+}
+
+#header-home .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#main-logo {
+    width: 275px;
+    margin: auto;
+}
+
+#header-home nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3em;
+}
+
+nav ul {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    padding: 1em;
+    color: var(--primary-dark);
+    border: 1px solid rgba(0,0,0,0);
+}
+
+nav ul a:hover {
+    border: 1px solid var(--primary-dark);
+}
+
+.header-home-nav-icons {
+    width: 75px;
+}
+
+/* Home Page Clients */
+#clients {
+    min-height: 1vh;
+}
+
+#clients h1 {
+    color: var(--primary-dark);
+}
+#client-logos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2em;
+}
